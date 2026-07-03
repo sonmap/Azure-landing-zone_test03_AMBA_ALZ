@@ -55,7 +55,7 @@ module "amba_policy" {
     amba_alz_logicapp_resource_id                  = jsonencode({ value = var.logic_app_resource_id })
     amba_alz_logicapp_callback_url                 = jsonencode({ value = var.logic_app_callback_url })
     amba_alz_byo_alert_processing_rule             = jsonencode({ value = var.bring_your_own_alert_processing_rule_resource_id })
-    amba_alz_byo_action_group                      = jsonencode({ value = var.bring_your_own_action_group_resource_id })
+    amba_alz_byo_action_group                      = jsonencode({ value = local.effective_action_group_resource_ids })
     amba_alz_sha_action_group_resources = jsonencode({
       value = {
         actionGroupEmail    = var.action_group_email
