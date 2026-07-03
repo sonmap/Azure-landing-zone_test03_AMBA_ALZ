@@ -1,0 +1,3 @@
+key,subscription_key,name,create
+hub,platform,rg-land03-hub-network,true
+dev,dev,rg-land03-dev-workloads,true
