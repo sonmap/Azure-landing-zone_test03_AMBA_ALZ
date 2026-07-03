@@ -1,0 +1,7 @@
+key,department,environment,resource_group_name,network_spoke_key,owner,create
+finance_dev,finance,dev,rg-land03-finance-dev,spoke_vm,son,true
+finance_qa,finance,qa,rg-land03-finance-qa,spoke_vm,son,true
+finance_prd,finance,prd,rg-land03-finance-prd,spoke_vm,son,true
+hr_dev,hr,dev,rg-land03-hr-dev,spoke_vm,son,true
+hr_qa,hr,qa,rg-land03-hr-qa,spoke_vm,son,true
+hr_prd,hr,prd,rg-land03-hr-prd,spoke_vm,son,true
