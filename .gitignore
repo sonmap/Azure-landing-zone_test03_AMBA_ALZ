@@ -24,3 +24,5 @@ override.tf.json
 *_override.tf.json
 *.xls
 *.xlsx
+
+.alzlib/

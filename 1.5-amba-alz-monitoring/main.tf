@@ -34,7 +34,7 @@ module "amba_policy" {
 
   architecture_name               = "amba"
   location                        = var.location
-  parent_resource_id              = data.azapi_client_config.current.tenant_id
+  parent_resource_id              = var.root_management_group_name
   policy_assignments_dependencies = var.bring_your_own_user_assigned_managed_identity ? [] : [module.amba_alz[0].user_assigned_managed_identity_resource_id]
 
   policy_default_values = {

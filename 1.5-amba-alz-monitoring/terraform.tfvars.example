@@ -19,10 +19,10 @@ action_group_email = [
   "owner@example.com"
 ]
 
-# Optional SMS-enabled Action Group. Keep disabled until receiver values are added in terraform.tfvars.
-enable_sms_action_group     = false
-sms_action_group_name       = "ag-land03-amba-sms"
-sms_action_group_short_name = "ambasms"
+# Email-enabled Action Group used by AMBA alert rules. Add SMS receivers only when needed.
+enable_sms_action_group     = true
+sms_action_group_name       = "ag-land03-amba-email"
+sms_action_group_short_name = "ambaemail"
 sms_action_group_email_receivers = [
   "owner@example.com"
 ]
