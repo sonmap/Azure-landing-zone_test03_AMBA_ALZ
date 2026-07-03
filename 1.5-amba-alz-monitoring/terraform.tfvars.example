@@ -1,0 +1,34 @@
+# Korea Central lab default
+location = "koreacentral"
+
+# Use the same subscription as azure-landing-zone_test03 lab unless you have a separate management subscription.
+management_subscription_id = "<SUBSCRIPTION_ID>"
+
+# Create and use a test Management Group first.
+# Example:
+# az account management-group create --name mg-land03-amba-test --display-name "land03 AMBA Test"
+# az account management-group subscription add --name mg-land03-amba-test --subscription <SUBSCRIPTION_ID>
+root_management_group_name = "mg-land03-amba-test"
+
+# AMBA shared resources
+resource_group_name                 = "rg-land03-amba-monitoring"
+user_assigned_managed_identity_name = "id-land03-amba-monitoring"
+
+# Email receivers for AMBA Action Group
+action_group_email = [
+  "owner@example.com"
+]
+
+# Exclude specific resources from AMBA monitoring by tag.
+amba_disable_tag_name   = "MonitorDisable"
+amba_disable_tag_values = ["true", "Test", "Dev", "Sandbox"]
+
+# AMBA ALZ library version used by the Azure/alz provider.
+amba_library_ref = "2026.06.2"
+
+tags = {
+  Environment = "lab"
+  Owner       = "son"
+  Workload    = "amba-alz-monitoring"
+  Project     = "land03"
+}
