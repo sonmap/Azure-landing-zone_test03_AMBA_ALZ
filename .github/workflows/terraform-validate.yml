@@ -1,0 +1,24 @@
+name: Terraform validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-amba-alz:
+    name: Validate AMBA ALZ stage
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 1.5-amba-alz-monitoring
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - name: Terraform fmt
+        run: terraform fmt -check -recursive
+      - name: Terraform init
+        run: terraform init -backend=false
+      - name: Terraform validate
+        run: terraform validate
