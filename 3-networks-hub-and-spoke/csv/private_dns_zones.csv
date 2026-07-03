@@ -1,0 +1,5 @@
+key,name,create
+blob,privatelink.blob.core.windows.net,true
+vault,privatelink.vaultcore.azure.net,true
+openai,privatelink.openai.azure.com,true
+aks,privatelink.koreacentral.azmk8s.io,true
