@@ -1,0 +1,7 @@
+key,subscription_key,department,environment,resource_group_name,location,data_classification,approval_required,network_spoke_key,create
+finance_dev,dev,finance,dev,rg-land03-finance-dev,koreacentral,internal,false,spoke-vm,true
+finance_qa,dev,finance,qa,rg-land03-finance-qa,koreacentral,internal,true,spoke-vm,true
+finance_prd,dev,finance,prd,rg-land03-finance-prd,koreacentral,confidential,true,spoke-vm,true
+hr_dev,dev,hr,dev,rg-land03-hr-dev,koreacentral,internal,false,spoke-vm,true
+hr_qa,dev,hr,qa,rg-land03-hr-qa,koreacentral,internal,true,spoke-vm,true
+hr_prd,dev,hr,prd,rg-land03-hr-prd,koreacentral,confidential,true,spoke-vm,true
