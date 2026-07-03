@@ -7,12 +7,23 @@ on:
       - main
 
 jobs:
-  validate-amba-alz:
-    name: Validate AMBA ALZ stage
+  validate:
+    name: Validate Terraform stages
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        stage:
+          - 0-bootstrap
+          - 1-org
+          - 1.5-amba-alz-monitoring
+          - 2-environments
+          - 3-networks-hub-and-spoke
+          - 4-projects
+          - 5-app-infra
     defaults:
       run:
-        working-directory: 1.5-amba-alz-monitoring
+        working-directory: ${{ matrix.stage }}
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
