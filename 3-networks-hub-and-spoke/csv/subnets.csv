@@ -1,0 +1,6 @@
+key,subscription_key,network_key,name,address_prefix,create
+hub_shared,platform,hub,snet-hub-shared,10.10.1.0/24,true
+vm,dev,spoke_vm,snet-vm,10.20.1.0/24,true
+aks,dev,spoke_aks,snet-aks,10.30.1.0/24,true
+ai,dev,spoke_ai,snet-ai,10.40.1.0/24,true
+private_endpoint,dev,spoke_ai,snet-private-endpoint,10.40.2.0/24,true
