@@ -1,0 +1,5 @@
+key,subscription_key,name,address_space,purpose,create
+hub,platform,vnet-land03-hub,10.10.0.0/16,Hub network,true
+spoke_vm,dev,vnet-land03-spoke-vm,10.20.0.0/16,VM spoke,true
+spoke_aks,dev,vnet-land03-spoke-aks,10.30.0.0/16,AKS spoke,true
+spoke_ai,dev,vnet-land03-spoke-ai,10.40.0.0/16,AI spoke,true
