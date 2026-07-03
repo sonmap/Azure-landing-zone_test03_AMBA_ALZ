@@ -28,6 +28,11 @@ sms_action_group_email_receivers = [
 ]
 sms_receivers = []
 
+# Optional Azure Monitor Workbook dashboard
+enable_monitoring_workbook       = true
+monitoring_workbook_name         = "a15f0000-0000-4000-8000-000000000001"
+monitoring_workbook_display_name = "AMBA ALZ Monitoring Overview"
+
 # Exclude specific resources from AMBA monitoring by tag.
 amba_disable_tag_name   = "MonitorDisable"
 amba_disable_tag_values = ["true", "Test", "Dev", "Sandbox"]
