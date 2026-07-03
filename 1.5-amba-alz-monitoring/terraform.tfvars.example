@@ -19,6 +19,15 @@ action_group_email = [
   "owner@example.com"
 ]
 
+# Optional SMS-enabled Action Group. Keep disabled until receiver values are added in terraform.tfvars.
+enable_sms_action_group     = false
+sms_action_group_name       = "ag-land03-amba-sms"
+sms_action_group_short_name = "ambasms"
+sms_action_group_email_receivers = [
+  "owner@example.com"
+]
+sms_receivers = []
+
 # Exclude specific resources from AMBA monitoring by tag.
 amba_disable_tag_name   = "MonitorDisable"
 amba_disable_tag_values = ["true", "Test", "Dev", "Sandbox"]
