@@ -1,0 +1,2 @@
+key,platform_subscription_id,dev_subscription_id,location,prefix,environment,purpose,owner,cost_center,expiry_date,admin_source_cidr,create
+default,<SUBSCRIPTION_ID>,<SUBSCRIPTION_ID>,koreacentral,land03,dev,hub-spoke-network,son,lab,2026-06-30,<ADMIN_PUBLIC_IP>/32,true
