@@ -11,7 +11,8 @@ Azure Monitor Baseline Alerts for Azure Landing Zones
 It deploys Azure Monitor baseline alert policies at Management Group scope by using Azure Policy, initiatives, and `DeployIfNotExists` patterns.
 
 ## Architecture
-![Uploading image.png…]()
+
+<img width="1669" height="938" alt="image" src="https://github.com/user-attachments/assets/7c859d89-950d-4ffb-82b2-3686f3054821" />
 
 
 ```mermaid
